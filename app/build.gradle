@@ -36,17 +36,16 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.1.1'
     compile "com.pushtorefresh.storio:sqlite:${STORIO_VERSION}"
     compile "com.pushtorefresh.storio:sqlite-annotations:${STORIO_VERSION}"
-//    annotationProcessor "com.pushtorefresh.storio:sqlite-annotations-processor:${STORIO_VERSION}"
+    annotationProcessor "com.pushtorefresh.storio:sqlite-annotations-processor:${STORIO_VERSION}"
 
     compile "com.google.dagger:dagger:${DAGGER_VERSION}"
     annotationProcessor "com.google.dagger:dagger-compiler:${DAGGER_VERSION}"
+    androidTestAnnotationProcessor "com.google.dagger:dagger-compiler:${DAGGER_VERSION}"
     testAnnotationProcessor "com.google.dagger:dagger-compiler:${DAGGER_VERSION}"
-//    provided 'javax.annotation:jsr250-api:1.0'
+    provided 'javax.annotation:jsr250-api:1.0'
 
     testCompile "org.mockito:mockito-core:${MOCKITO_VERSION}"
     androidTestCompile "com.linkedin.dexmaker:dexmaker-mockito:${DEX_MAKER_VERSION}"
     testCompile 'junit:junit:4.12'
 
-//    androidTestApt 'com.github.frankiesardo:android-auto-value-processor:0.1'
-//    androidTestCompile 'com.github.frankiesardo:android-auto-value:0.1'
 }

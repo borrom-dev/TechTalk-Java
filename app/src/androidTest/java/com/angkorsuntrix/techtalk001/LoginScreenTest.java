@@ -25,6 +25,7 @@ public class LoginScreenTest {
     public ActivityTestRule<LoginActivity> mTestRule
             = new ActivityTestRule(LoginActivity.class);
 
+
     @Test
     public void clickLoginButton() throws Exception {
         onView(withId(R.id.btn_login)).perform(click());
